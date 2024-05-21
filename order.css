@@ -1,4 +1,15 @@
-x
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.main{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to right, #fff5c3,  #9dd5d4	);
+}
 
 nav{
     width: 80%;

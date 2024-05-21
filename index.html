@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>my Hotel</title>
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <div class="logo">
+                <img src="myHotel-removebg-preview.png" alt="">
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="">НҮҮР</a></li>
+                    <li><a href="">ХОЛБОГДОХ</a></li>
+                    <li><a href="order.html">ЗАХИАЛГА</a></li>
+                    <li><a href="">УУЛЗАЛТ</a></li>
+                    <li><a href="">БИДНИЙ ТУХАЙ</a></li>
+                </ul> 
+            </div>
+        </nav>
+        <div class="information">
+            <div class="overlay"></div>
+            <img src="toyoko inn.jpg" alt="hotel" class="hotel">
+            <div id="circle">
+                <div class="feature one">
+                    <img src="twinBed.jpg" alt="">
+                    <div>
+                        <h1>Хос ортой</h1>
+                    </div>
+                </div>
+                <div class="feature two">
+                    <img src="QueenSizebed.jpg" alt="">
+                    <div>
+                        <h1>Том ортой</h1>
+                    </div>
+                </div>
+                <div class="feature three">
+                    <img src="Coolview.jpg" alt="">
+                    <div>
+                        <h1>Байгалтай</h1>
+                    </div>
+                </div>
+                <div class="feature four">
+                    <img src="smallSpace.png" alt="">
+                    <div>
+                        <h1>Жижиг талбайтай</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="controls">
+            <img src="up.png" alt="" id="upbutton">
+            <h3>СОЛИХ</h3>
+            <img src="down.png" alt="" id="downbutton">
+        </div>
+    </div>
+    <script>
+        var circle = document.getElementById("circle");
+        var upbutton = document.getElementById("upbutton");
+        var downbutton = document.getElementById("downbutton");
+        
+        var rotateValue = circle.style.transform;
+        var rotateSum;
+        upbutton.onclick = function(){
+            rotateSum = rotateValue + "rotate(-90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+        }
+
+        downbutton.onclick = function(){
+            rotateSum = rotateValue + "rotate(90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+        }
+    </script>
+   
+</body>
+</html>
